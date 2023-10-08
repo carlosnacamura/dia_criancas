@@ -2,6 +2,15 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  cursor: none;
+}
+.circulo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: yellow;
+  z-index: 800;
 }
 header {
     overflow-y: hidden;
@@ -91,4 +100,22 @@ button span {
   z-index: 3;
   position: relative;
   font-weight: 600;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0px 10px;
+}
+.explicacao,.dia_especial {
+  display: flex;
+  gap: 9px;
+}
+.explicacao p,.dia_especial p{
+  font-size: 24px;
+}
+.explicacao img,.dia_especial img {
+  width: 40%;
 }
