@@ -43,7 +43,7 @@ header {
 .separado * {
     margin-left: 20px;
 }
-button {
+.header_button {
   position: relative;
   height: 50px;
   padding: 0 30px;
@@ -55,47 +55,47 @@ button {
   font-family: inherit;
 }
 
-button:before,
-button:after {
+.header_button:before,
+.header_button:after {
   content: "";
   position: absolute;
   background: #e8e8e8;
   transition: all 0.2s linear;
 }
 
-button:before {
+.header_button:before {
   width: calc(100% + 6px);
   height: calc(100% - 16px);
   top: 8px;
   left: -3px;
 }
 
-button:after {
+.header_button:after {
   width: calc(100% - 16px);
   height: calc(100% + 6px);
   top: -3px;
   left: 8px;
 }
 
-button:hover {
+.header_button:hover {
   cursor: crosshair;
 }
 
-button:active {
+.header_button:active {
   transform: scale(0.95);
 }
 
-button:hover:before {
+.header_button:hover:before {
   height: calc(100% - 32px);
   top: 16px;
 }
 
-button:hover:after {
+.header_button:hover:after {
   width: calc(100% - 32px);
   left: 16px;
 }
 
-button span {
+.header_button span {
   font-size: 15px;
   z-index: 3;
   position: relative;

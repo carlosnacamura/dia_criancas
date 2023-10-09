@@ -13,9 +13,11 @@
       <div class="header_baixo">
         <div class="separado">
           <h1>O dia das crianças é aqui!</h1>
-          <button>
-            <span> JOGUE CONOSCO </span>
-          </button>
+          <a href="#jogos">
+            <button class="header_button">
+              <span> JOGUE CONOSCO </span>
+            </button>
+          </a>
         </div>
         <video
           src="videos/Header dia das crianças.mp4"
@@ -65,6 +67,14 @@
           Brasil. É um dia dedicado especialmente às crianças, marcado por
           presentes, festas e atividades especiais em sua homenagem.
         </p>
+      </div>
+      <h1 id="jogos">Jogos para nossas crianças</h1>
+      <div class="jogos">
+        <div class="adivinha">
+          <h2 class="titulo_numeroSort">Adivinha o número sorteado. Boa sorte!!!</h2>
+          <input type="number">
+          <button onclick="tentarSorte()">Tente sua sorte</button>
+        </div>
       </div>
     </main>
     <footer></footer>
