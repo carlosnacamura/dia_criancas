@@ -2,6 +2,9 @@
   font-family: Gamer;
   src: url(fontes/game_over.ttf);
 }
+html,body {
+  overflow-x: hidden !important;
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -14,10 +17,9 @@
   border-radius: 50%;
   position: fixed;
   background-color: yellow;
-  z-index: 800;
 }
 header {
-    overflow-y: hidden;
+  overflow: hidden;
 }
 .header_baixo {
   width: 100vw;
@@ -33,7 +35,7 @@ header {
 .separado {
   position: absolute;
   background-image: linear-gradient(90deg, rgb(104, 77, 226), transparent);
-  height: 111vh;
+  height: 200%;
   width: 100%;
   display: flex;
   align-items: start;
@@ -42,10 +44,11 @@ header {
   gap: 10px;
 }
 .separado h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .separado * {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 .header_button {
   position: relative;
@@ -113,22 +116,44 @@ main {
   gap: 50px;
   margin: 0px 10px;
 }
-.explicacao,.dia_especial {
+.explicacao,
+.dia_especial {
   display: flex;
   gap: 9px;
 }
-.explicacao p,.dia_especial p{
+.explicacao p,
+.dia_especial p {
   font-size: 24px;
 }
-.explicacao img,.dia_especial img {
+.explicacao img,
+.dia_especial img {
   width: 40%;
 }
 .jogos {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+  background-color: lightblue;
   width: 100vw;
   height: 100vh;
   padding: 10px;
+}
+.adivinha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.adivinha input {
+  padding: 9px;
+  border-radius: 20px;
+  border: none;
+}
+.adivinha button {
+  padding: 9px;
+  background-color: lightcoral;
+  border-radius: 20px;
+  border: none;
+  font-family: monospace;
 }

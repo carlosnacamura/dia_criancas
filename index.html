@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="imgs/crianca_web-removebg-preview.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dia das crianças</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -30,7 +31,7 @@
     </header>
     <main>
       <h1>O que é o dia das crianças?</h1>
-      <div class="explicacao">
+      <div class="explicacao" data-aos="fade-up">
         <p>
           Há muito tempo atrás, as pessoas perceberam que as crianças mereciam
           ser lembradas e celebradas. Elas são importantes para o mundo, mas nem
@@ -54,7 +55,7 @@
         />
       </div>
       <h1>Quando é o dia das crianças?</h1>
-      <div class="dia_especial">
+      <div class="dia_especial" data-aos="fade-right">
         <img
           src="https://static.vecteezy.com/ti/fotos-gratis/p1/8428867-garotinha-crianca-segurando-uma-lupa-em-fundo-branco-foto.jpg"
           alt="menina criança segurando uma lupa no fundo branco 8428867 Foto de stock no  Vecteezy"
@@ -74,7 +75,10 @@
         <div class="adivinha" data-aos="fade-left">
           <h2 class="titulo_numeroSort">Adivinha o número sorteado. Boa sorte!!!</h2>
           <input type="number">
-          <button onclick="tentarSorte()">Tente sua sorte</button>
+          <div>
+            <button onclick="tentarSorte()">Tentar sorte</button>
+            <button onclick="tentarResetar()">Resetar número</button>
+        </div>
         </div>
       </div>
     </main>
