@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dia das crianças</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="circulo"></div>
@@ -70,7 +71,7 @@
       </div>
       <h1 id="jogos">Jogos para nossas crianças</h1>
       <div class="jogos">
-        <div class="adivinha">
+        <div class="adivinha" data-aos="fade-left">
           <h2 class="titulo_numeroSort">Adivinha o número sorteado. Boa sorte!!!</h2>
           <input type="number">
           <button onclick="tentarSorte()">Tente sua sorte</button>
@@ -79,5 +80,9 @@
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

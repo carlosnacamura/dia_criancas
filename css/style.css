@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Gamer;
+  src: url(fontes/game_over.ttf);
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -118,4 +122,13 @@ main {
 }
 .explicacao img,.dia_especial img {
   width: 40%;
+}
+.jogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
 }
