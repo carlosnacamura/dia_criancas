@@ -45,36 +45,35 @@ addEventListener("keydown", (evt) => {
     tentarSorte();
   } else if (evt.key === "r") {
     tentarResetar();
-    contagem = 0
+    contagem = 0;
   }
 });
 /* Jogo do cebolinha */
 const canvas = document.createElement("canvas");
 const dimensao = canvas.getContext("2d");
-const aba_jogos = document.querySelector(".jogos")
-canvas.width = 600;
-canvas.height = 300;
-aba_jogos.appendChild(canvas);
+const pegaLadrao = document.querySelector(".pegaLadrao");
+canvas.width = 512;
+canvas.height = 480;
+pegaLadrao.appendChild(canvas);
 
 let bgReady = false;
 const bgImage = new Image();
 bgImage.onload = () => {
   bgReady = true;
 };
-bgImage.src =
-  "https://img.freepik.com/fotos-premium/jogo-de-video-de-fundo-abstrato-de-esports-scifi-gaming-cyberpunk-vr-simulacao-de-realidade-virtual-e-cena-do-metaverso-suporte-pedestal-palco-ilustracao-3d-renderizacao-futurista-sala-de-brilho-de-neon_42100-4107.jpg";
+bgImage.src = "imgs/background.png";
 let heroReady = false;
 let heroImage = new Image();
 heroImage.onload = () => {
   heroReady = true;
 };
-heroImage.src = "imgs/shrek.png";
+heroImage.src = "imgs/policial.png";
 let monsterReady = false;
 let monsterImage = new Image();
 monsterImage.onload = () => {
   monsterReady = true;
 };
-monsterImage.src = "imgs/cebola.png";
+monsterImage.src = "imgs/ladrao.png";
 
 const hero = {
   speed: 256,

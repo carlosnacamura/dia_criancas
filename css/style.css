@@ -134,11 +134,19 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   background-color: lightblue;
   width: 100vw;
-  height: 100vh;
+  gap: 40px;
+  height: 100%;
   padding: 10px;
-
+}
+.jogoSco {
+  width: 70vw;
+  height: 70vh;
+}
+.jogoSco:hover {
+  cursor: none;
 }
 .adivinha {
   display: flex;
@@ -146,6 +154,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  padding: 30px;
 }
 .adivinha input {
   padding: 9px;
