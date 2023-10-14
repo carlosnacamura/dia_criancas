@@ -1,8 +1,11 @@
 @font-face {
-  font-family: Gamer;
-  src: url(fontes/game_over.ttf);
+  font-family: 'Comico';
+  src: url("fontes/ComicNeueSansID.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
 }
-html,body {
+html,
+body {
   overflow-x: hidden !important;
 }
 * {
@@ -125,6 +128,7 @@ main {
 .explicacao p,
 .dia_especial p {
   font-size: 24px;
+  font-family: 'Comico',sans-serif;
 }
 .explicacao img,
 .dia_especial img {
@@ -141,12 +145,9 @@ main {
   height: 100%;
   padding: 10px;
 }
-.jogoSco {
+iframe {
   width: 70vw;
   height: 70vh;
-}
-.jogoSco:hover {
-  cursor: none;
 }
 .adivinha {
   display: flex;

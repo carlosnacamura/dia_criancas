@@ -48,9 +48,12 @@ addEventListener("keydown", (evt) => {
     contagem = 0;
   }
 });
-/* Jogo do cebolinha */
+/* Jogo do policia e ladrão */
 const canvas = document.createElement("canvas");
 const dimensao = canvas.getContext("2d");
+const som_peguei = document.querySelector(".peguei")
+const ladroes_a_seremPegos = 30
+const som_vitoria = document.querySelector(".vitoria")
 const pegaLadrao = document.querySelector(".pegaLadrao");
 canvas.width = 512;
 canvas.height = 480;
@@ -98,8 +101,8 @@ addEventListener("keyup", (evt) => {
 const reset = () => {
   hero.x = canvas.width / 2;
   hero.y = canvas.height / 2;
-  monster.x = 32 + Math.random() * (canvas.width - 32);
-  monster.y = 32 + Math.random() * (canvas.height - 32);
+  monster.x = 180 + Math.random() * (canvas.width - 180);
+  monster.y = 180 + Math.random() * (canvas.height - 180);
 };
 
 const update = (modificador) => {
@@ -123,6 +126,10 @@ const update = (modificador) => {
     monster.y <= hero.y + 32
   ) {
     ++monstrosPegos;
+    if (monstrosPegos%ladroes_a_seremPegos == 0){
+      som_vitoria.play()
+    }
+    som_peguei.play()
     reset();
   }
 };
@@ -141,7 +148,7 @@ const render = () => {
   dimensao.font = "24px Helvetica";
   dimensao.textAlign = "left";
   dimensao.textBaseline = "top";
-  dimensao.fillText("Monstros pegos: " + monstrosPegos, 32, 32);
+  dimensao.fillText("Ladrões pegos: " + monstrosPegos, 32, 32);
 };
 
 const main = () => {
@@ -161,3 +168,4 @@ const requestAnimationFrame =
 let then = Date.now();
 reset();
 main();
+
