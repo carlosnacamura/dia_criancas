@@ -35,8 +35,9 @@ header {
 .separado {
   position: absolute;
   background-image: linear-gradient(90deg, rgb(104, 77, 226), transparent);
-  height: 200%;
+  height: 111%;
   width: 100%;
+  top: 0;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -131,12 +132,13 @@ main {
 }
 .jogos {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: lightblue;
   width: 100vw;
   height: 100vh;
   padding: 10px;
+
 }
 .adivinha {
   display: flex;
