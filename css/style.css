@@ -22,9 +22,14 @@ body {
   border-radius: 50%;
   position: fixed;
   background-color: yellow;
+  z-index: 999;
 }
 header {
   overflow: hidden;
+}
+header h1 {
+  color: white;
+  font-size: 50px;
 }
 .header_baixo {
   width: 100vw;
@@ -60,64 +65,6 @@ main h1 {
 .separado * {
   margin-left: 20px;
 }
-.header_button {
-  position: relative;
-  height: 50px;
-  padding: 0 30px;
-  border: 2px solid #000;
-  background: #e8e8e8;
-  user-select: none;
-  white-space: nowrap;
-  transition: all 0.05s linear;
-  font-family: inherit;
-}
-
-.header_button:before,
-.header_button:after {
-  content: "";
-  position: absolute;
-  background: #e8e8e8;
-  transition: all 0.2s linear;
-}
-
-.header_button:before {
-  width: calc(100% + 6px);
-  height: calc(100% - 16px);
-  top: 8px;
-  left: -3px;
-}
-
-.header_button:after {
-  width: calc(100% - 16px);
-  height: calc(100% + 6px);
-  top: -3px;
-  left: 8px;
-}
-
-.header_button:hover {
-  cursor: crosshair;
-}
-
-.header_button:active {
-  transform: scale(0.95);
-}
-
-.header_button:hover:before {
-  height: calc(100% - 32px);
-  top: 16px;
-}
-
-.header_button:hover:after {
-  width: calc(100% - 32px);
-  left: 16px;
-}
-
-.header_button span {
-  font-size: 15px;
-  z-index: 3;
-  position: relative;
-  font-weight: 600;
-}
 main {
   display: flex;
   justify-content: center;
@@ -139,6 +86,22 @@ main {
 .explicacao img,
 .dia_especial img {
   width: 40%;
+}
+.fotos {
+  background-color: tomato;
+  padding: 40px;
+}
+.swiper {
+  width: 100vw;
+  height: 50vh;
+  z-index: 10;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper:hover {
+  cursor: pointer;
 }
 .jogos {
   display: grid;

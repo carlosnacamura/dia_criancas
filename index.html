@@ -8,6 +8,10 @@
       href="imgs/crianca_web-removebg-preview.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dia das crianças</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -25,11 +29,6 @@
       <div class="header_baixo">
         <div class="separado">
           <h1>O dia das crianças é aqui!</h1>
-          <a href="#jogos">
-            <button class="header_button">
-              <span> JOGUE CONOSCO </span>
-            </button>
-          </a>
         </div>
         <video
           src="videos/Header dia das crianças.mp4"
@@ -65,7 +64,28 @@
         />
       </div>
       <div class="fotos">
-
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="imgs/animais-para-criancas.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/criancas_2d.avif" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/criancas_pintadas.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/crianca_sopro.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/criancas_areia.jpeg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/dia-das-criancas-f.webp" />
+            </div>
+          </div>
+        </div>
       </div>
       <h1>Quando é o dia das crianças?</h1>
       <div class="dia_especial" data-aos="fade-right">
@@ -113,6 +133,28 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        slidesPerView: 3,
+        loop: true,
+        freeMode: true,
+        autoplay: true,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
     </script>
   </body>
 </html>
