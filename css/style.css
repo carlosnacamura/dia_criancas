@@ -1,8 +1,10 @@
-@font-face {
-  font-family: 'Comico';
-  src: url("fontes/ComicNeueSansID.ttf") format(truetype);
-  font-weight: normal;
-  font-style: normal;
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Raleway:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Orbitron:wght@900 & display=swap');
+:root {
+  --comic: 'Comic Neue', cursive,'Raleway', sans-serif;
+  --happy: 'Happy Monkey';
+  --game: 'Orbitron', sans-serif;
 }
 html,
 body {
@@ -31,6 +33,10 @@ header {
   align-items: center;
   z-index: 700;
 }
+main h1 {
+  font-family: var(--happy);
+  font-size: 90px;
+}
 .header_baixo video {
   object-fit: cover;
   width: 100vw;
@@ -48,8 +54,8 @@ header {
   gap: 10px;
 }
 .separado h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: var(--game);
+  font-size: 60px;
 }
 .separado * {
   margin-left: 20px;
@@ -128,26 +134,29 @@ main {
 .explicacao p,
 .dia_especial p {
   font-size: 24px;
-  font-family: 'Comico',sans-serif;
+  font-family: var(--comic);
 }
 .explicacao img,
 .dia_especial img {
   width: 40%;
 }
 .jogos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 450px 1fr; 
+  justify-items: center;
   background-color: lightblue;
   width: 100vw;
   gap: 40px;
   height: 100%;
   padding: 10px;
 }
-iframe {
-  width: 70vw;
+.jogoSco {
+  width: 65vw;
   height: 70vh;
+}
+.jogoApenas{
+  width: 60vw;
+  height: 80vh;
 }
 .adivinha {
   display: flex;
@@ -156,6 +165,12 @@ iframe {
   flex-direction: column;
   gap: 10px;
   padding: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.botoes {
+  display: flex;
+  gap: 30px;
 }
 .adivinha input {
   padding: 9px;
@@ -168,4 +183,7 @@ iframe {
   border-radius: 20px;
   border: none;
   font-family: monospace;
+}
+canvas {
+  border-radius: 30px;
 }
