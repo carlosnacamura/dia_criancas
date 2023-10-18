@@ -11,7 +11,7 @@ addEventListener("mousemove", (evt) => {
   cursor.style.left = position.x + "px";
   cursor.style.top = position.y + "px";
 });
-addEventListener("mousedown", () => {
+addEventListener("mousedown", (evt) => {
   cursor.style.background = "lightblue";
 });
 addEventListener("mouseup", () => {
@@ -51,9 +51,9 @@ addEventListener("keydown", (evt) => {
 /* Jogo do policia e ladrão */
 const canvas = document.createElement("canvas");
 const dimensao = canvas.getContext("2d");
-const som_peguei = document.querySelector(".peguei")
-const ladroes_a_seremPegos = 30
-const som_vitoria = document.querySelector(".vitoria")
+const som_peguei = document.querySelector(".peguei");
+const ladroes_a_seremPegos = 30;
+const som_vitoria = document.querySelector(".vitoria");
 const pegaLadrao = document.querySelector(".pegaLadrao");
 canvas.width = 512;
 canvas.height = 480;
@@ -126,10 +126,10 @@ const update = (modificador) => {
     monster.y <= hero.y + 32
   ) {
     ++monstrosPegos;
-    if (monstrosPegos%ladroes_a_seremPegos == 0){
-      som_vitoria.play()
+    if (monstrosPegos % ladroes_a_seremPegos == 0) {
+      som_vitoria.play();
     }
-    som_peguei.play()
+    som_peguei.play();
     reset();
   }
 };
@@ -168,4 +168,3 @@ const requestAnimationFrame =
 let then = Date.now();
 reset();
 main();
-
