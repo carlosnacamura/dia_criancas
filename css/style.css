@@ -156,7 +156,7 @@ canvas {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  background-color: white;
+  background-color: rgb(245, 176, 176);
   z-index: 900;
   top: 0;
   width: 100vw;
