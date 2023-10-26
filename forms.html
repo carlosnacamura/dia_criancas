@@ -84,6 +84,22 @@
               </a>
             </div>
           </footer>
+          <form method="POST" action="verifica.php">
+            <h3>Insira as informções para entrar em contato com nossa equipe</h3>
+            <div class="area">
+                <fieldset>
+                    <p>
+                    Nome: <input type="text" size="42" maxlength="50" name="nome" placeholder="Digite seu nome"><br><br>
+                    Email: <input type="text" size="42" maxlength="14" name="CPF" placeholder="Dogite seu email"><br><br>
+                    Cidade: <input type="text" size="42" maxlength="20" name="Curso/Serie" placeholder="Digite sua cidade"><br><br>
+                    <h4>Comentários</h4>
+                    <textarea name="comentarios" cols="42" rows="5"></textarea><br><br>
+                    <input type="submit" value="Enviar" name="enviar"><br><br>
+                    <input type="reset" value="Limpar dados">
+                    </p>
+                </fieldset>
+            </div>
+        </form>
           <script src="js/formulario.js"></script>
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script>
