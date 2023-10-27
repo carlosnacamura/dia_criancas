@@ -184,6 +184,9 @@ canvas {
   .area input[type="reset"]:hover {
     background-color: #45a049;
   }
+  textarea {
+    resize: none;
+  }
   /* Footer */
   footer {
     padding: 30px;
