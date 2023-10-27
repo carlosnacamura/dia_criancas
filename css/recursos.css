@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Orbitron:wght@900 & display=swap");
+:root {
+  --comic: "Comic Neue", cursive, "Raleway", sans-serif;
+  --happy: "Happy Monkey";
+  --game: "Orbitron", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden !important;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  cursor: none;
+}
+body {
+  height: 100vh;
+  background-color: #9de1f6;
+}
+header {
+  overflow: hidden;
+}
+header h1 {
+  color: white;
+  font-size: 50px;
+}
+.header_cima {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(245, 176, 176);
+  z-index: 900;
+  top: 0;
+  width: 100vw;
+  height: 20vh;
+}
+.header_cima img {
+  width: 6%;
+}
+.header_cima h1 {
+  color: yellow;
+  font-family: var(--happy);
+}
+.header_cima a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: var(--comic);
+  background-size: 300%;
+  transition: 0.5s;
+}
+.header_cima a:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    40deg,
+    blue,
+    blue,
+    yellow,
+    lightblue,
+    lightcoral,
+    blue
+  );
+  animation: colorido 9s linear alternate infinite;
+}
+@keyframes colorido {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 300%;
+  }
+}
+/* Footer */
+footer {
+  padding: 30px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  bottom: 0;
+}
+footer * {
+  font-family: monospace;
+}
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.informacoes a {
+  color: rgb(90, 90, 90);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.informacoes p {
+  margin-top: 30px;
+}
+.informacoes a:hover {
+  color: rgb(53, 53, 53);
+}
+.integrantes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  width: 300px;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #181717;
+}
+.integrantes a {
+  text-decoration: none;
+}
+
+.button:hover svg path {
+  fill: #181717;
+}
+.circulo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: yellow;
+  z-index: 999;
+}
+.texto1 {
+  font-family: var(--comic);
+  text-align: justify;
+  font-weight: bold;
+  width: 100vw;
+  margin-top: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto1 h3 {
+  margin-left: 20%;
+  margin-right: 5%;
+}
+/* Se quiser tire para deixar a imagem no canto */
+.texto1 img {
+  margin-right: 20%;
+}
+/* ---------------------------------- */
+.Q {
+  margin: 1%;
+  font-family: var(--comic);
+  font-size: medium;
+  text-align: justify;
+  font-size: medium;
+  margin-top: 10%;
+}
+
+footer {
+  padding: 30px;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+}
+footer * {
+  font-family: monospace;
+}
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.informacoes a {
+  color: rgb(90, 90, 90);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.informacoes p {
+  margin-top: 30px;
+}
+.informacoes a:hover {
+  color: rgb(53, 53, 53);
+}
+.integrantes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  width: 300px;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #181717;
+}
+.integrantes a {
+  text-decoration: none;
+}
+
+.button:hover svg path {
+  fill: #181717;
+}
+.brincadeira {
+  width: 550px;
+  right: 550px;
+}
